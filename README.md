@@ -22,8 +22,8 @@ Welcome to the Artify, a revolutionary platform where users can become authors, 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/story-protocol-project.git
-   cd story-protocol-project
+   git clone https://github.com/Ashish-Kumar-007/Artify.git
+   cd Artify
    ```
 
 2. **Install Dependencies**
