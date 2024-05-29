@@ -1,91 +1,40 @@
-# Artify
+# Decentralized Research Paper Vault (DRPV)
 
 ## Overview
+The Decentralized Research Paper Vault is a platform designed to revolutionize the academic publishing and licensing ecosystem. It aims to address several key problems faced by researchers, authors, and readers in the current system:
 
-Welcome to the Artify, a revolutionary platform where users can become authors, publishers, and buyers. This project enables authors to create generative unique art, which can be showcased on our marketplace. Publishers can apply for licenses to use this art and produce sellable products. Upon successful sales, the revenue is distributed among the author, publisher, and the platform.
+1. **Intermediary Delays:** Traditional licensing platforms involve numerous intermediaries, leading to significant delays in checking and issuing licenses. Our decentralized platform streamlines this process, reducing time and increasing efficiency.
 
-## Features
+2. **Centralized Control:** Existing systems are often controlled by a few major publishers, leading to monopolistic practices and high costs for access. Decentralization ensures fairer and more competitive pricing.
 
-- **Author Role**: Create and showcase generative unique art.
-- **Publisher Role**: Apply for licenses to use art, create products, and sell them.
-- **Buyer Role**: Purchase unique products created by publishers.
-- **Revenue Distribution**: Publisher receives 70%, author receives 25%, and the platform receives 5%.
+3. **Transparency and Trust:** The use of blockchain technology ensures transparency in the licensing process, making it easier to verify the authenticity of licenses and preventing unauthorized secondary data usage.
 
-## Getting Started
+4. **Incentives for Authors:** Our platform offers better incentives for authors by providing more direct and fair compensation mechanisms, thus encouraging more researchers to share their work.
 
-### Prerequisites
+5. **Access and Availability:** By removing barriers and reducing costs, our decentralized licensing platform improves access to research papers, making knowledge more widely available and accelerating scientific progress.
 
-- [Node.js](https://nodejs.org/) (v18.x or later)
-- [npm](https://www.npmjs.com/) (v6.x or later)
+## How it Works
+1. Authors upload their research papers to the platform.
+2. Users can browse and purchase papers using cryptocurrency.
+3. Authors receive fair compensation for their work.
+4. Transactions are recorded on the blockchain for transparency and security.
 
-### Installation
+## Installation
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Create .env file then write NEXT_PUBLIC_PROJECT_ID and pass the walletconnect cloud id
+4. Start the application with `npm run dev`.
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Ashish-Kumar-007/Artify.git
-   cd Artify
-   ```
+## Problem Solved
+The Decentralized Research Paper Vault addresses the inefficiencies and inequalities in the current academic publishing and licensing system by providing a decentralized, transparent, and fair platform for sharing and accessing research papers.
 
-2. **Install Dependencies**
-   ```bash
-   npm install
-   ```
+## Technologies Used
+- Solidity for smart contract development
+- Ethereum blockchain for decentralized storage and execution
+- Next.js for the frontend user interface
+- IPFS for file storage and retrieval
 
-3. **Run the Application**
-   ```bash
-   npm run  dev
-   ```
+## Future Development
+In the future, we plan to implement additional features such as peer review mechanisms, collaboration tools, and integration with academic institutions to further enhance the platform's functionality and impact.
 
-   The application will be running on `http://localhost:3000`.
-
-## Usage
-
-### Author
-
-1. **Create Art**
-   - Use the art creation tools provided in the platform to generate unique art pieces.
-   - Upload your art to the marketplace with detailed descriptions and metadata.
-
-2. **Manage Art**
-   - View the status of your art pieces and track license applications from publishers.
-
-### Publisher
-
-1. **Browse Marketplace**
-   - Explore the marketplace to find art pieces suitable for your product ideas.
-
-2. **Apply for License**
-   - Select an art piece and apply for a license to use it in your products.
-   - Wait for the author's approval.
-
-3. **Create and Sell Products**
-   - Once approved, use the art to create sellable products.
-   - List the products on the platform for buyers to purchase.
-
-### Buyer
-
-1. **Explore Products**
-   - Browse through various products created by publishers using unique art from authors.
-
-2. **Purchase Products**
-   - Select and purchase the products you like.
-   - Enjoy owning a product that supports both the author and publisher.
-
-## Revenue Distribution
-
-- **Publisher**: Receives 70% of the sales revenue.
-- **Author**: Receives 25% of the sales revenue.
-- **Platform**: Retains 5% of the sales revenue.
-
-## Contributing
-
-We welcome contributions from the community. To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes and push to your fork.
-4. Submit a pull request with a detailed description of your changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+---
