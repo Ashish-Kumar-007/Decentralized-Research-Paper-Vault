@@ -1,0 +1,324 @@
+{
+    "contractAddress" : "0x17fF967beC36DBCe2a222BC8EE9dC23873969B26",
+     "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "ipAssetRegistry",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "licensingModule",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "pilTemplate",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "paperId",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "buyer",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "LicensePurchased",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "paperId",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "string",
+              "name": "author",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "PaperPublished",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "IP_ASSET_REGISTRY",
+          "outputs": [
+            {
+              "internalType": "contract IPAssetRegistry",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "LICENSING_MODULE",
+          "outputs": [
+            {
+              "internalType": "contract LicensingModule",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "PIL_TEMPLATE",
+          "outputs": [
+            {
+              "internalType": "contract PILicenseTemplate",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "ResearchPaper_NFT",
+          "outputs": [
+            {
+              "internalType": "contract ResearchPaperNFT",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAllPapers",
+          "outputs": [
+            {
+              "internalType": "struct DRPV.Paper[]",
+              "name": "",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "authorName",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "authorAddress",
+                  "type": "address"
+                },
+                { "internalType": "string", "name": "title", "type": "string" },
+                {
+                  "internalType": "string",
+                  "name": "ipfsHash",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "price",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            { "internalType": "address", "name": "_user", "type": "address" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAllPapersByUser",
+          "outputs": [
+            {
+              "internalType": "struct DRPV.Paper[]",
+              "name": "purchases",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "authorName",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "authorAddress",
+                  "type": "address"
+                },
+                { "internalType": "string", "name": "title", "type": "string" },
+                {
+                  "internalType": "string",
+                  "name": "ipfsHash",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "price",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            { "internalType": "address", "name": "_paperId", "type": "address" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPaper",
+          "outputs": [
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "string", "name": "", "type": "string" },
+            { "internalType": "string", "name": "", "type": "string" },
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "licenseFeePercent",
+          "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "licensesPurchasedByUser",
+          "outputs": [
+            { "internalType": "address", "name": "", "type": "address" }
+          ]
+        },
+        {
+          "inputs": [
+            { "internalType": "address", "name": "", "type": "address" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "paperDetails",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "authorName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "authorAddress",
+              "type": "address"
+            },
+            { "internalType": "string", "name": "title", "type": "string" },
+            { "internalType": "string", "name": "ipfsHash", "type": "string" },
+            { "internalType": "uint256", "name": "price", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "papers",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "authorName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "authorAddress",
+              "type": "address"
+            },
+            { "internalType": "string", "name": "title", "type": "string" },
+            { "internalType": "string", "name": "ipfsHash", "type": "string" },
+            { "internalType": "uint256", "name": "price", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "publishFee",
+          "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_authorName",
+              "type": "string"
+            },
+            { "internalType": "string", "name": "_title", "type": "string" },
+            { "internalType": "string", "name": "_ipfsHash", "type": "string" },
+            { "internalType": "uint256", "name": "_price", "type": "uint256" }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "publishPaper"
+        },
+        {
+          "inputs": [
+            { "internalType": "address", "name": "_paperId", "type": "address" }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "purchaseLicense",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "licenseId",
+              "type": "uint256"
+            }
+          ]
+        }
+      ]
+}
+     
+

@@ -1,5 +1,5 @@
 {
-  "name": "story-protocol-hackathon",
+  "name": "decentralized-research-paper-vault",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,12 +11,12 @@
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.1.1",
     "@tanstack/react-query": "^5.39.0",
-    "dotenv": "^16.4.5",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "viem": "^2.12.3",
-    "wagmi": "^2.9.7"
+    "wagmi": "^2.9.7",
+    "web3": "^4.9.0"
   },
   "devDependencies": {
     "eslint": "^8",
