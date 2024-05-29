@@ -1,7 +1,5 @@
 // pages/paper/[id].js
 import { useRouter } from 'next/router';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 export default function PaperDetails() {
   const router = useRouter();
@@ -9,7 +7,6 @@ export default function PaperDetails() {
 
   return (
     <div>
-      <Header />
       <main className="container mx-auto p-8">
         <h1 className="text-2xl font-bold mb-4">Paper Title</h1>
         <p>Author: <a href="#" className="text-blue-500">Ethereum Address</a></p>
@@ -28,7 +25,6 @@ export default function PaperDetails() {
           </ul>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
