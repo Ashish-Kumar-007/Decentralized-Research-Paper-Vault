@@ -20,7 +20,7 @@ export default function Publish() {
             <input type="text" className="w-full p-2 border rounded" />
           </div>
           <div className="mb-4">
-            <label className="block mb-2">Author's Ethereum Address</label>
+            <label className="block mb-2">Author&#39;s Ethereum Address</label>
             <input type="text" className="w-full p-2 border rounded" />
           </div>
           <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
